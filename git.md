@@ -2,6 +2,10 @@
 
 Souce Code Management
 
+## Pre-commit Hooks
+
+We use [pre-commit](https://pre-commit.com/) framework to manage our hooks. Please be sure to run `pre-commit install` inside every single repo that you clone.
+
 ## Branching Model
 
 In general, each repository will have 3 types of branches:
