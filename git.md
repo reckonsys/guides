@@ -33,7 +33,7 @@ The `feature-*` branches are created by developers working on specific features.
 
 ## Commit Messages
 
-Every commit should follow the following pattern
+Messages should be max 50 chars long (including type and issue #). Every commit message MUST follow the following pattern:
 
 ```
 <type>(<issue number>): <short summary>
