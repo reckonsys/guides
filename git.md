@@ -23,7 +23,7 @@ main +------+----------------------------------------+----------> production
                      |            merge PR ^
                      |                     |
                      |                     |
-   feat-* / fix-* +---------------------+-----------------------> dev / local
+      feat-* / fix-* +---------------------+--------------------> dev / local
 ```
 
 No commits will ever be made directly on `main`/ `dev` branches (except initial and merge commits)
