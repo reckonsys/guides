@@ -12,6 +12,24 @@ Here are the configuration files:
 ### Additional pyproject.toml config
 
 ```
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | migrations
+)/
+'''
+
 [tool.isort]
 # Make sure this matches `*.py` in .editorconfig
 ensure_newline_before_comments = true
@@ -72,6 +90,7 @@ repos:
     hooks:
       - id: black
         language_version: python3
+        exclude: ^.*\b(migrations)\b.*$
 ```
 
 
