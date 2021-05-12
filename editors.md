@@ -93,6 +93,24 @@ repos:
         exclude: ^.*\b(migrations)\b.*$
 ```
 
+# .github/workflows/black.yaml
+
+```
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: psf/black@stable
+        with:
+          args: ". --check"
+```
+
 
 # Vim / NeoVim
 
